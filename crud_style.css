@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    color: #fff;
+    background-image:linear-gradient(#0aa,#088) ;
+    padding: 8px;
+}
+body{
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+}
+body > table{
+    width: 80%;
+    background-image:  radial-gradient(#ddd,#aaa) ,url(background.jpeg);
+    background-blend-mode: hard-light;
+
+}
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width: 100%;
+}
+#empty{
+    background-image: none;
+    color: red;
+}
+.Gender{
+    display: flex;
+    margin: 10px 0px;
+}
+#Hobby{
+ width: 50%;
+ padding: 10px;
+}
+.labels{
+    color: #333;
+    margin: 10px;
+}
+label{
+    background-image: linear-gradient(45deg,#fff, transparent);
+    padding: 5px;
+    border-radius: 15px;
+}
+#Male{
+    margin-left: 10px;
+}
+#Female{
+    margin-left: 10px;
+}
+td,th{
+    border: 1px solid #aaa;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: unset;
+
+
+}
+
+tr:nth-child(even),table.list thead>tr{
+    background-color: #ddd;
+}
+input[type=text], input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 30%;
+    background-image:linear-gradient(#09f,#06b) ;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-image:linear-gradient(#08c,#09f);
+}
+form .buttons{
+text-align: right;
+}
+a{
+    cursor: pointer;
+    margin-right: 4px;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+a:hover{
+    background-image:linear-gradient(#fb0,#c70) ;
+}
+b{
+    cursor: pointer;
+    margin-right: 4px;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+b:hover{
+
+    background-image:linear-gradient(#f33,#c00) ;
+
+}
