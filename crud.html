@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        CRUD operation using HTML CSS JS
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link href="crud_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <header>Insert Employee Records:</header>
+                    <div class="label">
+                        <label class="validation-error hide" id="nameValidationError" >This field is required</label>
+                        <input type="text" name="Name" id="Name" value="">
+                    </div>
+                    <div class="label">
+                       <label>Surname:</label>
+                        <input type="text" name="Surname"id="Surname">
+                    </div>
+                    <div class="label Gender">
+                        <label>Gender: </label>
+                        <input type="radio" name="Gender" id="Male" value="Male" >
+                        <label for="Male">Male</label><br>
+                        <input type="radio" name="Gender" id="Female" value="Female" >
+                        <label for="Female">Female</label><br>
+                    </div>
+                    <div class="label">
+                       <label>Mobile number:</label>
+                        <input type="number" name="Phone"id="Phone" >
+                    </div>
+                    <div class="label">
+                        <label>Salary:</label>
+                        <input type="number" name="Salary"id="Salary" >
+                    </div>
+                    <div class="buttons">
+                            <input type="submit" value="Submit" id="Submit">
+                    </div>
+
+                </forms>
+            </td>
+           
+            <td>
+                <header>View Records:</header>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Gender</th>
+                            <th>Phone</th>
+                            <th>Salary</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="crud_script.js"></script>
+</body>
