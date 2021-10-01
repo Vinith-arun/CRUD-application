@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        CRUD operation using HTML CSS JS
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link href="crud_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <header>Insert Employee Records:</header>
+                    <div class="labels">
+                        <label>Name:</label>
+                        <label id="empty"></label> 
+                        <input type="text" name="Name" id="Name" value="">
+                    </div>
+                    <div class="labels">
+                       <label>Surname:</label>
+                        <input type="text" name="Surname"id="Surname">
+                    </div>
+                    <div class="labels Gender">
+                        <label>Gender: </label>
+                        <input type="radio" name="Gender" id="Male" value="Male" >
+                        <label for="Male">Male</label><br>
+                        <input type="radio" name="Gender" id="Female" value="Female" >
+                        <label for="Female">Female</label><br>
+                    </div>
+                    <div class="labels">
+                        <label>Hobby:</label>
+                       <select name="Hobby" id="Hobby">
+                          <option value="-"></option>
+                           <option value="Dance">Dance</option>
+                           <option value="Music">Music</option>
+                           <option value="Reading">Reading</option>
+                           <option value="Gaming">Gaming</option>
+                       </select>
+                    </div>
+                    <div class="labels">
+                       <label>Mobile number:</label>
+                        <input type="text" id="Phone" name="Phone" pattern="[0-9]{10}" title="Enter 10 digit mobile number">
+                    </div>
+
+                    <div class="buttons">
+                            <input type="submit" value="Submit" id="Submit">
+                    </div>
+
+                </forms>
+            </td>
+           
+            <td class="display">
+
+                <header>View Records:</header>
+                <div class="scorllit">
+                <table class="list" id="employeeList" >
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Gender</th>
+                            <th>Hobby</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table></div>
+
+            </td>
+        </tr>
+    </table>
+    <script src="crud_script.js"></script>
+</body>
